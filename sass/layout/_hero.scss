@@ -1,0 +1,76 @@
+.hero {
+  background-color: var(--color-background);
+  text-align: center;
+  padding: 118px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
+}
+.hero_overlay {
+  //
+  // height: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg-480.jpg);
+  background-position: center;
+  background-size: cover;
+
+    @media screen and (min-width: 1200px) {
+      max-width: 1600px;
+      height: 600px;
+
+  }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero-bg-960-@2x.jpg);
+    }
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero_overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-bg-768.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url(../images/hero-bg-1536-@2x.jpg);
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero_overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-bg-1200.jpg);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+          url(../images/hero-bg-2400-@2x.jpg);
+      }
+    }
+  }
+}
+.hero__title {
+  margin-bottom: 30px;
+
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--secondary-color);
+  @include fonts(26px, 900, 42px, 0.06em);
+  text-transform: uppercase;
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    @include fonts(44px, 900, 60px, 0.06em);
+  }
+}
+.primary-btn {
+  padding: 10px 24px;
+  border: 0;
+  border-radius: 4px;
+  @include fonts(16px, 700, 30px, 0.06em);
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+}

@@ -1,0 +1,33 @@
+
+.client__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.client__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 92px;
+  outline: 1px solid var(--main-icon-color);
+  border-radius: 4px;
+  color: var(--main-icon-color);
+  transition: color 250ms var(--timing-function), outline 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    outline: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
+
+.client__icon {
+  fill: currentColor;
+}
