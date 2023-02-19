@@ -60,6 +60,10 @@
   color: var(--secondary-color);
   @include fonts(26px, 900, 42px, 0.06em);
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    width: 360px;
+    
+  }
   @media screen and (min-width: 1200px) {
     width: 696px;
     @include fonts(44px, 900, 60px, 0.06em);

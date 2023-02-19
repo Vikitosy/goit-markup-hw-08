@@ -36,7 +36,7 @@
   background-color: transparent;
   cursor: pointer;
   border: none;
-
+  transition: color 250ms var(--timing-function);
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -64,6 +64,15 @@
   color: var(--primary-color);
   @include fonts(40px, 500, 47px, 0.02em);
   margin-bottom: 32px;
+  transition: color 250ms var(--timing-function);
+  &:hover, &:focus{
+   color: var(--accent-color);
+  margin-left: 2px;
+  margin-bottom: 36px; 
+  }
+  @media screen and (max-width: 400px) {
+    @include fonts(30px, 500, 35px, 0.02em);
+  }
 }
 
 .navigation__link_current {
@@ -82,10 +91,17 @@
 .contact__phone {
   @include fonts(34px, 500, 40px, 0.02em);
   color: var(--accent-color);
+  @media screen and (max-width: 400px) {
+    @include fonts(24px, 500, 28px, 0.02em);
+  }
+
 }
 .contact__mail {
   @include fonts(24px, 500, 28px, 0.02em);
   color: var(--main-text-color);
+  @media screen and (max-width: 400px) {
+    @include fonts(16px, 500, 18px, 0.02em);
+  }
 }
 
 .socials {
@@ -105,5 +121,10 @@
   border-right: 1px solid rgba(33, 33, 33, 0.2);
   .socials__item:last-child & {
     border-right: none;
+  }
+  @media screen and (max-width: 400px) {
+    @include fonts(14px, 500, 18px, 0.02em);
+    padding-left: 5px;
+  padding-right: 5px;
   }
 }

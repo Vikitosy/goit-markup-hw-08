@@ -33,9 +33,13 @@
   .backdrop.is-hidden & {
     transform: scale(0.7);
   }
+  
   @media screen and (min-width: 480px) and (max-width: 1199px) {
   max-width: 450px;
     
+}
+@media screen and (max-width: 480px){
+  width: 90%;
 }
 
 }
