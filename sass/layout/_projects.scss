@@ -13,7 +13,7 @@
 .project__link {
   display: flex;
   flex-direction: column;
-
+  height: 100%;
   transition: box-shadow 250ms var(--timing-function);
 
   &:hover,
@@ -47,12 +47,10 @@
     padding: 30px 24px;
   }
 }
-.test {
-  flex-grow: 1;
-}
+
 .project__description {
-  
-    z-index: 2;
+  flex-grow: 1;
+  z-index: 2;
   padding: 20px 24px;
   border-left: 1px solid var(--shadow-color);
   border-bottom: 1px solid var(--shadow-color);

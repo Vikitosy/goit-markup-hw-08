@@ -1361,6 +1361,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
   -webkit-transition: -webkit-box-shadow 250ms var(--timing-function);
   transition: -webkit-box-shadow 250ms var(--timing-function);
   transition: box-shadow 250ms var(--timing-function);
@@ -1407,13 +1408,10 @@ body {
   }
 }
 
-.test {
+.project__description {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-}
-
-.project__description {
   z-index: 2;
   padding: 20px 24px;
   border-left: 1px solid var(--shadow-color);
